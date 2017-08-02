@@ -1,0 +1,23 @@
+.container {
+	width: 100%;
+	height: auto;
+}
+
+.header {
+	float:left;
+}
+
+.navbar {
+	width: 100%;
+	background-color: #bbb;
+	height: 60px;
+	margin-top: -6px;
+}
+
+.navbar ul {
+	float:right;
+}
+
+.navbar ul li {
+	display:inline;
+}

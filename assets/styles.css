@@ -1,8 +1,6 @@
 body {
 	background-image: url("images/organic-tiles.png"); 
-	background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
 }
 
 
@@ -46,7 +44,7 @@ body {
 	margin-right: 20px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #a7b0af;
-	font-size: 115	%;
+	font-size: 115%;
 }
 
 .navbar-right a {
@@ -88,6 +86,10 @@ a:hover{
 	font-weight:bold;
 }
 
+.aboutme p {
+	padding:10px;
+}
+
 .connect {
 	float:right;
 	width: 25%;
@@ -113,6 +115,7 @@ a:hover{
 .connect img {
 	width:20%;
 	height:20%;	
+	padding:10px;
 }
 
 hr{

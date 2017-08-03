@@ -3,7 +3,7 @@
 	height: auto;
 }
 
-.header {
+.name {
 	float:left;
 }
 
@@ -14,10 +14,24 @@
 	margin-top: -6px;
 }
 
-.navbar ul {
+.navbar-right {
 	float:right;
+	width: 100%;
+	background-color: #bbb;
+	height: 60px;
+	margin-top: -6px;
+	display:inline;
 }
 
-.navbar ul li {
+.navbar-left {
+	float:left;
+	width: 100%;
+	background-color: #bbb;
+	height: 60px;
+	margin-top: -6px;
 	display:inline;
+}
+
+.ul-width{
+	width: 100%;
 }

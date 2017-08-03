@@ -1,8 +1,17 @@
+body {
+	background-image: url("images/organic-tiles.png"); 
+	background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .container-fluid {
 	width: 100%;
 	height: auto;
 	border-bottom: 1.1px solid;
 	border-color: #cccccc;
+	background-color: #ffffff;
 }
 
 .container{
@@ -66,6 +75,9 @@ a:hover{
 	border: solid;
 	margin-top: 60px;
 	padding:15px;
+	border-color:#cccccc;
+	background-color: #ffffff;
+	border-width: 1px
 }
 
 .aboutme h1 {
@@ -74,16 +86,19 @@ a:hover{
 	color: #4aaaa5;
 	font-size: 150%;
 	font-weight:bold;
-
 }
 
-.connect{
+.connect {
 	float:right;
-	width: 30%;
+	width: 25%;
 	border:solid;
 	margin-top: 60px;
 	text-align:center;
 	padding:15px;
+	border-color:#cccccc;
+	margin-right: 20px;
+	background-color: #ffffff;
+	border-width: 1px
 }
 
 .connect h2 {
@@ -98,6 +113,12 @@ a:hover{
 .connect img {
 	width:20%;
 	height:20%;	
+}
+
+hr{
+	border-width: 1.2px;
+	border-style: solid;
+	border-color: #cccccc
 }
 
 .footer{

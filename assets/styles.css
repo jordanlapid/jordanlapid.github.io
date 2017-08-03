@@ -10,10 +10,6 @@
 	margin: 0px auto;
 }
 
-.name {
-	float:left;
-}
-
 .navbar {
 	width: 100%;
 	background-color: #bbb;
@@ -33,4 +29,14 @@
 
 .ul-width{
 	width: 100%;
+}
+
+.aboutme{
+	float:left;
+	width:60%;
+}
+
+.connect{
+	float:right;
+	width: 40%
 }

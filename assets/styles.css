@@ -16,19 +16,11 @@
 
 .navbar-right {
 	float:right;
-	width: 100%;
-	background-color: #bbb;
-	height: 60px;
-	margin-top: -6px;
 	display:inline;
 }
 
 .navbar-left {
 	float:left;
-	width: 100%;
-	background-color: #bbb;
-	height: 60px;
-	margin-top: -6px;
 	display:inline;
 }
 

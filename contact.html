@@ -20,14 +20,23 @@
   	<div class="container-fluid">
   		<div class="container">
   			<div class="aboutme">
-  				<h1> About Me </h1>
-  				<hr>
-  					<img class="img-resize" src="assets/images/profile.png">
-  					<p> 29/M/Chula Vista </p> 
-  					<p> My name is Jordan Lapid, but you can call me j-dawg. </p>
-  					<p>	I'm looking to become a web dev, and maybe start a blog. </p>
-  					<p> The best things in life are burritos, burgers, and brew. </p>
-  					<p class="clear"> And my favorite color is blue. </p>
+  			  	<h1> Contact </h1>
+  					<hr>
+					 <form action="/action_page.php">
+
+					    <label class="fText" for="fname">Name</label>
+					    <input type="text" id="fname" name="formName" placeholder="Your name..">
+
+					    <label class="fText" for="lname">Email</label>
+					    <input type="text" id="email" name="formEmail" placeholder="Your email..">
+
+
+					    <label class="fText" for="subject">Message</label>
+					    <textarea id="message" name="formMessage" placeholder="Write something.." style="height:200px"></textarea>
+
+					    <input type="submit" value="Submit">
+
+		  			</form>
 			</div>
 		</div>
 
@@ -44,7 +53,7 @@
 
   </body>
   	<div class="container-fluid">
-   	<footer class="footer">
+   	<footer class="footer3">
  		<p class="copyright"> © Copyright 2017 Jordan Lapid</p>
  	</footer>
  	</div>

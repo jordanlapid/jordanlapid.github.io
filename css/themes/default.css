@@ -13,7 +13,7 @@
   fill: #a79759;
 }
 .ip-header .ip-loader svg path.ip-loader-circle {
-  stroke: #a79759;
+  stroke: black;
 }
 .no-js .ip-header .ip-logo svg path {
   fill: #a79759;

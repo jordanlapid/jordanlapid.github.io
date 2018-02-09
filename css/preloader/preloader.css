@@ -60,7 +60,7 @@
 .ip-header .ip-loader svg path.ip-loader-circle {
     -webkit-transition: stroke-dashoffset 0.2s;
     transition: stroke-dashoffset 0.2s;
-    stroke: black;
+    stroke: blue;
 }
 
 
@@ -132,7 +132,7 @@
 .loaded .ip-logo svg path {
     -webkit-transition: all 0.5s ease 0.3s;
     transition: all 0.5s ease 0.3s;
-    fill: #fff;
+    fill: black;
 }
 
 /* Header animation when loading finishes */

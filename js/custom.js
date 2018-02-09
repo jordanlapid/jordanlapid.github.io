@@ -371,73 +371,73 @@
         /*  Contact Form Ajax Submission
         /*----------------------------------------------------*/
         
-        $('#contactform').on('submit', function(event) {
+        // $('#contactform').on('submit', function(event) {
 
-            $('.visible input-group').removeClass('has-error'); // remove the error class
-            $('.help-block').remove(); // remove the error text
-            //
-            // get the form data
-            // there are many ways to get this data using jQuery (you can use the class or id also)
-            var formData = {
-                'name': $('input[name=name]').val(),
-                'email': $('input[name=email]').val(),
-                'phone': $('input[name=phone]').val(),
-                'comments': $('textarea[name=comments]').val()
-            };
+        //     $('.visible input-group').removeClass('has-error'); // remove the error class
+        //     $('.help-block').remove(); // remove the error text
+        //     //
+        //     // get the form data
+        //     // there are many ways to get this data using jQuery (you can use the class or id also)
+        //     var formData = {
+        //         'name': $('input[name=name]').val(),
+        //         'email': $('input[name=email]').val(),
+        //         'phone': $('input[name=phone]').val(),
+        //         'comments': $('textarea[name=comments]').val()
+        //     };
 
-            // process the form
-            $.ajax({
-                type: 'POST',
-                url: 'php/contact.php',
-                data: formData,
-                dataType: 'json',
-                encode: true
-            })
+        //     // process the form
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: 'php/contact.php',
+        //         data: formData,
+        //         dataType: 'json',
+        //         encode: true
+        //     })
               
-            // using the done promise callback
-            .done(function(data) {
+        //     // using the done promise callback
+        //     .done(function(data) {
 
-                // here we will handle errors and validation messages
-                if (!data.success) {
-                   // handle errors for name ---------------
-                    if (data.errors.name) {
-                        $('#name').parent().parent().addClass('has-error'); // add the error class to show red input
-                        $('#name').parent().parent().append('<div class="help-block alert-danger">' + data.errors.name + '</div>'); // add the actual error message under our input
-                    }
-                    // handle errors for email ---------------
-                    if (data.errors.email) {
-                        $('#email').parent().parent().addClass('has-error'); // add the error class to show red input
-                        $('#email').parent().parent().append('<div class="help-block alert-danger">' + data.errors.email + '</div>');
-                    }
-                    // handle errors for phone ---------------
-                    if (data.errors.phone) {
-                        $('#phone').parent().parent().addClass('has-error'); // add the error class to show red input
-                        $('#phone').parent().parent().append('<div class="help-block alert-danger">' + data.errors.phone + '</div>');
-                    }
-                    // handle errors for comments ---------------
-                    if (data.errors.comments) {
-                        $('#comments').parent().parent().addClass('has-error'); // add the error class to show red input
-                        $('#comments').parent().parent().append('<div class="help-block alert-danger">' + data.errors.comments + '</div>');
-                    }
+        //         // here we will handle errors and validation messages
+        //         if (!data.success) {
+        //            // handle errors for name ---------------
+        //             if (data.errors.name) {
+        //                 $('#name').parent().parent().addClass('has-error'); // add the error class to show red input
+        //                 $('#name').parent().parent().append('<div class="help-block alert-danger">' + data.errors.name + '</div>'); // add the actual error message under our input
+        //             }
+        //             // handle errors for email ---------------
+        //             if (data.errors.email) {
+        //                 $('#email').parent().parent().addClass('has-error'); // add the error class to show red input
+        //                 $('#email').parent().parent().append('<div class="help-block alert-danger">' + data.errors.email + '</div>');
+        //             }
+        //             // handle errors for phone ---------------
+        //             if (data.errors.phone) {
+        //                 $('#phone').parent().parent().addClass('has-error'); // add the error class to show red input
+        //                 $('#phone').parent().parent().append('<div class="help-block alert-danger">' + data.errors.phone + '</div>');
+        //             }
+        //             // handle errors for comments ---------------
+        //             if (data.errors.comments) {
+        //                 $('#comments').parent().parent().addClass('has-error'); // add the error class to show red input
+        //                 $('#comments').parent().parent().append('<div class="help-block alert-danger">' + data.errors.comments + '</div>');
+        //             }
                     
-                    if (data.errors.error) {
-                        $('#contact-form').append('<div class="help-block alert-danger">' + data.errors.error + '</div>'); // add the actual error message                    
-                    } 
+        //             if (data.errors.error) {
+        //                 $('#contact-form').append('<div class="help-block alert-danger">' + data.errors.error + '</div>'); // add the actual error message                    
+        //             } 
                     
-                }
-                else {
-                    // ALL GOOD! just show the success message!
-                    $('#contact-form').append('<div class="alert alert-success pull-left">' + data.message + '</div>');                                  
-                }
-            })
-            // using the fail promise callback
-            .fail(function(data) {
-                // show any errors
-                // best to remove for production
-            });
-            // stop the form from submitting the normal way and refreshing the page
-            event.preventDefault();
-        });
+        //         }
+        //         else {
+        //             // ALL GOOD! just show the success message!
+        //             $('#contact-form').append('<div class="alert alert-success pull-left">' + data.message + '</div>');                                  
+        //         }
+        //     })
+        //     // using the fail promise callback
+        //     .fail(function(data) {
+        //         // show any errors
+        //         // best to remove for production
+        //     });
+        //     // stop the form from submitting the normal way and refreshing the page
+        //     event.preventDefault();
+        // });
         
         $('#home').css({'height': windowHeight + 'px'});           
 

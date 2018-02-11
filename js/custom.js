@@ -571,6 +571,7 @@
         }).done(function(result) {
             var items, itemsNext;
 
+            console.log(result);
             // find current container
             items = $(result).filter(function() {
                 return $(this).is('div' + '.cbp-loadMore-block' + clicks);
